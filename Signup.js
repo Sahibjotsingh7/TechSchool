@@ -40,7 +40,7 @@ const Signup = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate('/login'); // Navigate to login page
+          navigate('/login'); 
         }, 1000);
       } else if (error || !success) {
         handleError(error ? error : message);
@@ -104,7 +104,7 @@ const Signup = () => {
                 fontSize: '16px'
               }} />
           </div>
-            <div style={{ marginBottom: '20px', position: 'relative' }}>
+            <div style={{ marginBottom: '0px', position: 'relative' }}>
             <label htmlFor='password' style={{ color: '#333', marginBottom: '5px', display: 'block' }}>Password</label>
             <input type={showpassword ? 'text' : 'password'}
               value={signupinfo.password}
@@ -115,7 +115,7 @@ const Signup = () => {
                 padding: '10px',
                 borderRadius: '4px',
                 border: '1px solid #ddd',
-                marginBottom: '10px',
+                marginBottom: '0px',
                 fontSize: '16px'
               }} />
             <span 
@@ -130,6 +130,7 @@ const Signup = () => {
               {showpassword ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
+          <div style={{color:'red' , marginBottom:"10px"}}><p>password must contain 8 letters</p><p>password  must contain a numerical value, special character, and normal letters</p></div>
           <input type="submit" value={'Sign Up'} style={{
             width: '100%',
             padding: '12px',
@@ -142,7 +143,9 @@ const Signup = () => {
             transition: 'background-color 0.3s ease'
           }}>
           </input>
+          
         </form>
+        
         <div style={{ marginTop: '20px', textAlign: 'center' }}>
           <p style={{ color: '#666' }}>
             Already have an account? <Link to="/login" style={{ color: '#006d5b', textDecoration: 'none', fontWeight: 'bold' }}>Login</Link>

@@ -8,14 +8,37 @@ const Review = () => {
    
 
     useEffect(() => {
-        fetch('http://localhost:8080/reviews/all')
-            .then(response => response.json())
-            .then(data => {
-                console.log('Fetched reviews:', data); 
-                setReviews(data.reviews || []); 
-            })
-            .catch(error => console.error('Error fetching reviews:', error));
-    }, []);
+        const fetchReviews = async () => {
+          try {
+            const storedUserInfo = JSON.parse(localStorage.getItem('loginInfo'));
+      
+            if (!storedUserInfo || !storedUserInfo.token) {
+              throw new Error('User is not authenticated');
+            }
+      
+            const response = await fetch('http://localhost:8080/reviews/all', {
+              headers: {
+                Authorization: `Bearer ${storedUserInfo.token}`,
+                'Content-Type': 'application/json',
+              },
+            });
+      
+            if (!response.ok) {
+              throw new Error('Failed to fetch reviews');
+            }
+      
+            const data = await response.json();
+            console.log('Fetched reviews:', data); // Debugging log
+            setReviews(data.reviews || []); // Update state with fetched reviews
+          } catch (error) {
+            console.error('Error fetching reviews:', error);
+            setReviews([]); // Clear reviews on error
+          }
+        };
+      
+        fetchReviews();
+      }, []);
+      
     
 
     const handleNewReview = (name, course, feedback, rating) => {

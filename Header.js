@@ -16,21 +16,24 @@ const Header = ({ loged, handleLogout }) => {
         <NavLink to="/about" style={navLinkStyle} activeStyle={activeLinkStyle}>About</NavLink>
         <NavLink to="/tutorial" style={navLinkStyle} activeStyle={activeLinkStyle}>Tutorials</NavLink>
         <NavLink to="/notes" style={navLinkStyle} activeStyle={activeLinkStyle}>Notes</NavLink>
-        <NavLink to="/review" style={navLinkStyle} activeStyle={activeLinkStyle}>Reviews</NavLink>
+        <NavLink to="/prectice" style={navLinkStyle} activeStyle={activeLinkStyle}>Practice</NavLink>
+        {/*<NavLink to="/review" style={navLinkStyle} activeStyle={activeLinkStyle}>Reviews</NavLink>*/}
+        <NavLink to="/help" style={navLinkStyle} activeStyle={activeLinkStyle}>Help</NavLink>
+        <NavLink to="compiler" style={navLinkStyle} activeStyle={activeLinkStyle}>Code</NavLink>
+       
       </nav>
       <div style={authContainerStyle}>
-        {loged.status ? (
-          <>
-            <FaRegUserCircle style={iconStyle} />
-            <span style={userInfoStyle}>{loged.name}</span>
-            <button style={authButtonStyle} onClick={handleLogout}>Log out</button>
-          </>
-        ) : (
-          <>
-            <button style={authButtonStyle} onClick={() => navigate('/signup')}>Sign Up</button>
-            <button style={authButtonStyle} onClick={() => navigate('/login')}>Login</button>
-          </>
-        )}
+      {loged.status ? (
+  <>
+    <NavLink  style={authButtonStyle} to="/dashboard">Dashboard</NavLink>
+      <button onClick={handleLogout} style={authButtonStyle}>Logout</button>
+  </>
+) : (
+  <>
+    <button style={authButtonStyle} onClick={() => navigate('/signup')}>Sign Up</button>
+    <button style={authButtonStyle} onClick={() => navigate('/login')}>Login</button>
+  </>
+)}
       </div>
     </div>
   );
@@ -91,20 +94,10 @@ const authContainerStyle = {
   alignItems: 'center',
 };
 
-const iconStyle = {
-  fontSize: '24px',
-  color: 'green',
-  marginRight: '8px',
-};
-
-const userInfoStyle = {
-  fontSize: '16px',
-  color: 'green',
-  marginRight: '20px',
-};
 
 const authButtonStyle = {
   backgroundColor: 'green',
+  textDecoration:"none",
   border: 'none',
   color: 'white',
   fontSize: '14px',

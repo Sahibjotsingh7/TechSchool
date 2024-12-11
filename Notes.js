@@ -3,11 +3,25 @@ import { AiOutlineArrowRight, AiOutlineFileText} from 'react-icons/ai';
 
 const Notes = () => {
   const [notes, setNotes] = useState([]);
-  
+
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const response = await fetch('http://localhost:8080/notes/notes');
+        const storedUserInfo = JSON.parse(localStorage.getItem('loginInfo'));
+        if (!storedUserInfo.token) {
+          throw new Error('User is not authenticated');
+        }
+
+        const response = await fetch('http://localhost:8080/notes/notes', {
+          headers: {
+            Authorization: `Bearer ${storedUserInfo.token}`,
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch notes');
+        }
+        
         const data = await response.json();
         setNotes(data);
       } catch (error) {
@@ -20,29 +34,34 @@ const Notes = () => {
 
   const handleDownload = (downloadUrl) => {
     window.open(downloadUrl, '_blank');
-  };
+  }
 
  
   return (
     <div style={{ padding: '100px', textAlign: 'center' }}>
-      <h1 style={{ marginBottom: '30px' }}>Download Notes by Experts</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
+      <h1 style={{ marginBottom: '30px' }}>Download Notes/Cheetsheets by Experts</h1>
+      <div style={{  justifyContent: 'center', gap: '20px' }}>
         {notes.map((note) => (
           <div
             key={note._id}
             style={{ 
-              width: '300px', 
+              display: "flex",
+              alignItems:"center",
+              justifyContent:"space-between",
+              width: '90%', 
               padding: '20px', 
               background: '#f9f9f9', 
               borderRadius: '10px', 
               boxShadow: '0 4px 8px rgba(0,0,0,0.1)', 
-              textAlign: 'center'
+              textAlign: 'center',
+              marginTop:"20px"
             }}
           >
-            <div style={{ marginBottom: '10px' }}>
+            <div style={{}}>
             <AiOutlineFileText size={50} color="red" />
+            <span style={{marginLeft:"10px" , marginBottom:"10px", fontWeight:"bold", fontSize:"25px"}}>{note.language}</span>
             </div>
-            <h2>{note.language}</h2>
+           
             <p>{note.description}</p>
             <button
               onClick={() => handleDownload(note.downloadUrl)}
@@ -56,8 +75,6 @@ const Notes = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '10px',
-                margin: '20px auto'
               }}
             >
               Download Now <AiOutlineArrowRight />

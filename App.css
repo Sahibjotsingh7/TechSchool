@@ -3,3 +3,254 @@
  padding: 0;
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+h1 {
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  /* Card container for quiz questions */
+  .radio-group {
+    text-align: left;
+    font-size: 20px;
+    margin: 20px 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the card */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .radio-group:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  .question{
+    margin-bottom: 10px;
+  }
+  
+  /* Style for answer options */
+  .options {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 10px;
+    font-size: 18px;
+  }
+  
+  /* Individual answer option styling */
+  .options label {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .options label:hover {
+    background-color: #f1f1f1; /* Change background on hover */
+  }
+  
+  .options input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Increase size of the radio button */
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0; /* Add margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the button */
+  }
+  
+  .submit-button:hover {
+    background-color: #219150;
+  }
+  
+  .submit-button:active {
+    background-color: #1e8449;
+  }
+  
+  /* Align the form and radio options in the center */
+  form {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* App.css */
+  
+  /* General Styles */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .submit-button, .view-results-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submit-button:hover, .view-results-button:hover {
+    background-color: #45a049;
+  }
+  
+  .radio-group {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .options label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .video-list-container {
+    margin-top: 40px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .video-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    cursor: pointer;
+  }
+  
+  .video-iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  
+  .video-info {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .video-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .likes-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .heart-icon {
+    font-size: 22px;
+    cursor: pointer;
+    color: #e74c3c;
+  }
+  
+  .single-video-container {
+    padding: 20px;
+  }
+  
+  .video-container {
+    margin-bottom: 30px;
+  }
+  
+  .fullscreen-iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+  }
+  
+  .likes-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .heart-icon {
+    font-size: 22px;
+    cursor: pointer;
+    color: #e74c3c;
+  }
+  
+  .review-section {
+    margin-top: 40px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c0392b;
+  }
+  
+  .review {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  

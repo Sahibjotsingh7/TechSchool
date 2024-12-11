@@ -3,6 +3,7 @@ import Add from './Add';
 import Note from './Note';
 import {  useNavigate } from 'react-router-dom';
 
+
 const Main = () => {
   const navigate = useNavigate();
   return (
@@ -48,6 +49,7 @@ const Main = () => {
       </div>
       <Add></Add>
       <Note></Note>
+    
     </div>
   );
 }

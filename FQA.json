@@ -1,0 +1,259 @@
+[
+  {
+    "category": "User Account",
+    "q": "How do I create an account on TechSchool?",
+    "a": "Click the 'Sign Up' button on the homepage and fill in your details like name, email, and password.",
+    "keywords": ["create", "account", "signup", "register", "techschool"]
+  },
+  {
+    "category": "User Account",
+    "q": "What are the password requirements?",
+    "a": "Your password must be at least 8 characters long and include a mix of letters, numbers, and special characters.",
+    "keywords": ["password", "requirements", "secure", "characters"]
+  },
+  {
+    "category": "User Account",
+    "q": "I forgot my password. What should I do?",
+    "a": "Click on 'Forgot Password' on the login page. Enter your email to receive an OTP for resetting your password.",
+    "keywords": ["forgot", "password", "reset", "otp", "login"]
+  },
+  {
+    "category": "User Account",
+    "q": "How do I change my password?",
+    "a": "Log in to your account, go to the Profile Settings, and select 'Change Password.'",
+    "keywords": ["change", "password", "profile", "settings"]
+  },
+  {
+    "category": "User Account",
+    "q": "What should I do if I don't receive the OTP?",
+    "a": "Check your spam/junk folder. If it's not there, try resending the OTP or contact support.",
+    "keywords": ["otp", "not received", "support", "spam", "resend"]
+  },
+  {
+    "category": "User Account",
+    "q": "Can I update my email address?",
+    "a": "Yes, go to Profile Settings and select 'Update Email.'",
+    "keywords": ["update", "email", "profile", "settings"]
+  },
+  {
+    "category": "Tutorials",
+    "q": "How do I find tutorials for a specific skill?",
+    "a": "Use the search bar or browse by categories like CSE Basics, Coding, or Development.",
+    "keywords": ["find", "tutorials", "skills", "search", "categories"]
+  },
+  {
+    "category": "Tutorials",
+    "q": "How do I select the best tutorial?",
+    "a": "Check the ratings and reviews provided by other learners to make an informed choice.",
+    "keywords": ["best", "tutorial", "ratings", "reviews", "learners"]
+  },
+  {
+    "category": "Tutorials",
+    "q": "Can I watch tutorials offline?",
+    "a": "Currently, tutorials are only available online.",
+    "keywords": ["tutorials", "watch", "offline", "online"]
+  },
+  {
+    "category": "Tutorials",
+    "q": "Are there free tutorials available?",
+    "a": "Yes, all tutorials are free.",
+    "keywords": ["free", "tutorials", "available"]
+  },
+  {
+    "category": "Notes and Cheatsheets",
+    "q": "How do I download notes or cheatsheets?",
+    "a": "Go to the Notes section, select the material you want, and click the 'Download' button.",
+    "keywords": ["download", "notes", "cheatsheets", "material"]
+  },
+  {
+    "category": "Notes and Cheatsheets",
+    "q": "Are the notes handwritten or typed?",
+    "a": "The notes are handwritten and available in PDF format.",
+    "keywords": ["notes", "handwritten", "typed", "pdf", "format"]
+  },
+  {
+    "category": "Notes and Cheatsheets",
+    "q": "What are cheatsheets?",
+    "a": "Cheatsheets are concise summaries designed for quick revision.",
+    "keywords": ["cheatsheets", "summaries", "revision", "concise"]
+  },
+  {
+    "category": "Notes and Cheatsheets",
+    "q": "Do I need a premium account to download notes?",
+    "a": "No, all the notes are free you can download by normal Account.",
+    "keywords": ["premium", "account", "notes", "free", "download"]
+  },
+  {
+    "category": "Notes and Cheatsheets",
+    "q": "Can I share downloaded notes with others?",
+    "a": "Notes are for personal use only; sharing them violates our terms of service.",
+    "keywords": ["share", "notes", "personal", "terms", "service"]
+  },
+  {
+    "category": "Practice Quizzes",
+    "q": "What types of quizzes are available?",
+    "a": "We offer quizzes in CSE Basics, Coding, and Development.",
+    "keywords": [
+      "quizzes",
+      "types",
+      "available",
+      "cse",
+      "coding",
+      "development"
+    ]
+  },
+  {
+    "category": "Practice Quizzes",
+    "q": "How do I start a quiz?",
+    "a": "Go to the Quiz section, select your desired topic, and click 'Start Quiz.'",
+    "keywords": ["start", "quiz", "section", "topic"]
+  },
+  {
+    "category": "Practice Quizzes",
+    "q": "Can I review my quiz answers?",
+    "a": "Yes, your answers and explanations for correct answers are displayed after submission.",
+    "keywords": ["review", "quiz", "answers", "explanations", "submission"]
+  },
+  {
+    "category": "Practice Quizzes",
+    "q": "Are the quizzes timed?",
+    "a": "Yes, each quiz has a time limit, which is displayed before you start.",
+    "keywords": ["timed", "quizzes", "time", "limit", "start"]
+  },
+  {
+    "category": "Practice Quizzes",
+    "q": "Can I retake a quiz?",
+    "a": "Yes, quizzes can be retaken to improve your score.",
+    "keywords": ["retake", "quiz", "improve", "score"]
+  },
+  {
+    "category": "Results and Performance",
+    "q": "How are quiz results displayed?",
+    "a": "Results are displayed instantly after you submit your answers.",
+    "keywords": ["quiz", "results", "displayed", "submit", "answers"]
+  },
+  {
+    "category": "Results and Performance",
+    "q": "What does my performance summary include?",
+    "a": "It includes your score, time taken, and areas for improvement.",
+    "keywords": ["performance", "summary", "score", "time", "improvement"]
+  },
+  {
+    "category": "Results and Performance",
+    "q": "Can I track my progress over time?",
+    "a": "Yes, your profile dashboard shows your progress and past quiz results.",
+    "keywords": ["track", "progress", "time", "profile", "dashboard"]
+  },
+  {
+    "category": "Results and Performance",
+    "q": "Are quiz scores shared publicly?",
+    "a": "No, your scores are private and visible only to you.",
+    "keywords": ["quiz", "scores", "publicly", "private", "visible"]
+  },
+  {
+    "category": "Results and Performance",
+    "q": "Can I download my performance report?",
+    "a": "Currently, performance reports are viewable online only.",
+    "keywords": ["download", "performance", "report", "viewable", "online"]
+  },
+
+  {
+    "q": "How can I reset my password?",
+    "a": "To reset your password, go to the 'Forgot Password' section on the login page, enter your email, and follow the instructions sent to your inbox.",
+    "keywords": ["reset", "password", "forgot"]
+  },
+  {
+    "q": "How do I delete my account?",
+    "a": "To delete your account, please contact our support team at support@example.com with a request to delete your account. Please note, this action is permanent.",
+    "keywords": ["delete", "account", "permanent"]
+  },
+  {
+    "q": "How can I update my profile?",
+    "a": "To update your profile, log in to your account and go to the 'Profile' section where you can update your personal information and preferences.",
+    "keywords": ["update", "profile", "change"]
+  },
+  {
+    "q": "What types of tutorials do you offer?",
+    "a": "We offer a wide variety of tutorials, including coding, development, and computer science basics. You can find these tutorials in the 'Tutorials' section of the website.",
+    "keywords": ["tutorials", "offer", "coding"]
+  },
+  {
+    "q": "Do you have a mobile app?",
+    "a": "Currently, we do not offer a mobile app, but our website is fully optimized for mobile devices and tablets.",
+    "keywords": ["mobile", "app", "tablet"]
+  },
+  {
+    "q": "How do I give feedback on a tutorial?",
+    "a": "You can leave feedback on any tutorial by navigating to the tutorial page and using the rating and review system at the bottom of the page.",
+    "keywords": ["feedback", "tutorial", "review"]
+  },
+  {
+    "q": "Can I download tutorials?",
+    "a": "Yes, you can download PDF versions of the tutorials, notes, and cheatsheets from the 'Download' section on each tutorial page.",
+    "keywords": ["download", "tutorials", "cheatsheets"]
+  },
+  {
+    "q": "Is there a subscription fee?",
+    "a": "No, all the tutorials and quizzes on TechSchool are free. You only need an account to track your progress and save your work.",
+    "keywords": ["subscription", "fee", "cost"]
+  },
+  {
+    "q": "How can I contact customer support?",
+    "a": "You can reach our customer support team by emailing us at support@example.com. We aim to respond within 24 hours.",
+    "keywords": ["contact", "support", "email"]
+  },
+  {
+    "q": "How can I join your community?",
+    "a": "You can join our community by creating an account and participating in forums and discussion boards available to all users.",
+    "keywords": ["community", "join", "forums"]
+  },
+
+  {
+    "category": "General",
+    "q": "Hello",
+    "a": "Hi there! How can I assist you today?",
+    "keywords": ["hello", "hi", "hey"]
+  },
+  {
+    "category": "General",
+    "q": "How are you?",
+    "a": "I'm just a bot, but I'm here to help you with whatever you need! How can I assist you today?",
+    "keywords": ["how are you", "how are you doing"]
+  },
+  {
+    "category": "General",
+    "q": "Who are you?",
+    "a": "I’m TechSchool’s AI assistant. I’m here to help you with your queries about the platform!",
+    "keywords": ["who are you", "what are you", "identity"]
+  },
+  {
+    "category": "General",
+    "q": "What can you do?",
+    "a": "I can assist you with account setup, accessing tutorials, downloading notes, taking quizzes, and much more. Just ask me!",
+    "keywords": ["what can you do", "help", "assist"]
+  },
+  {
+    "category": "General",
+    "q": "Thank you",
+    "a": "You're welcome! Let me know if you have more questions.",
+    "keywords": ["thanks", "thank you"]
+  },
+  {
+    "category": "General",
+    "q": "Goodbye",
+    "a": "Goodbye! Have a great day and happy learning!",
+    "keywords": ["goodbye", "bye", "see you"]
+  },
+  {
+    "category": "General",
+    "q": "Can you help me?",
+    "a": "Of course! Tell me what you need help with, and I'll do my best.",
+    "keywords": ["help me", "assist me", "can you help"]
+  },
+  {
+    "category": "General",
+    "q": "What is TechSchool?",
+    "a": "TechSchool is an e-learning platform offering video tutorials, notes, quizzes, and more for CSE students.",
+    "keywords": ["techschool", "what is"]
+  }
+]

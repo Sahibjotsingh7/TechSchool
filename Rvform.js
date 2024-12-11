@@ -9,14 +9,19 @@ const Rvform = ({ getreview }) => {
     const [formcourse, setFormcourse] = useState('');
     const [formreview, setFormreview] = useState('');
     const [rating, setRating] = useState(0);
+    const storedUserInfo = JSON.parse(localStorage.getItem('loginInfo'));
 
     function submithandle(event) {
         event.preventDefault();
+        const info = localStorage.getItem('logininfo');
+
+        
         
         fetch('http://localhost:8080/reviews/add', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                Authorization: `Bearer ${storedUserInfo.token}`,
             },
             body: JSON.stringify({
                 name: formname, 
